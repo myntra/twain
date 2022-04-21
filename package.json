@@ -1,5 +1,5 @@
 {
-  "name": "@myntra/twain",
+  "name": "myntra-twain",
   "version": "1.0.0",
   "description": "dynamic tweening engine",
   "main": "lib/twain.js",
@@ -16,6 +16,6 @@
   "license": "BSD",
   "readmeFilename": "Readme.md",
   "dependencies": {
-    "@myntra/fn": "1.0.0"
+    "myntra-fn": "1.0.0"
   }
 }

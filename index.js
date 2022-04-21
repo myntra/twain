@@ -1,4 +1,4 @@
-var _ = require('@myntra/fn');
+var _ = require('myntra-fn');
 
 function collect(obj, fn) {
     var o = {};
