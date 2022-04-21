@@ -1,4 +1,4 @@
-var _ = require('fn');
+var _ = require('@myntra/fn');
 
 function collect(obj, fn) {
     var o = {};
@@ -59,7 +59,7 @@ _.extend(Tween.prototype, {
 
         _.isValue(this.time) || (this.time = this.now());
 
-        // this is the heart of the whole thing, really. 
+        // this is the heart of the whole thing, really.
         // an implementation of an exponential smoothing function
         // http://en.wikipedia.org/wiki/Exponential_smoothing
         var now = this.now(),
@@ -115,7 +115,7 @@ _.extend(Tween.prototype, {
 
 
 // Twain.
-// this basically holds a collection of tweeners for easy usage. 
+// this basically holds a collection of tweeners for easy usage.
 // check out examples on how to use.
 
 function Twain(obj) {
@@ -130,7 +130,7 @@ function Twain(obj) {
     this.decode = this.config.decode || _.identity;
 
     // reset the config encode/decode functions. we don't want it to propogate through
-    // ... or do we?        
+    // ... or do we?
     this.config.encode = this.config.decode = _.identity;
 
 }
@@ -194,7 +194,7 @@ _.extend(Twain.prototype, {
     }
 });
 
-// export some pieces 
+// export some pieces
 Twain.Tween = Tween;
 
 module.exports = Twain;
